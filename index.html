@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="output.css" rel="stylesheet">
+        <script src="scripts/navbar.js"></script>
+    </head>
+    <body style="font-family: oceanWideSemibold;">
+        <div class="fixed w-screen h-screen bg-[url('assets/images/bg.png')] bg-responsive-size bg-no-repeat"></div>
+        <!-- Navbar -->
+        <div id="navbar" class="fixed w-screen h-16 top-0 flex justify-between items-center p-2 pl-4 pr-4 z-10">
+            <a href="https://www.instagram.com/kgso.24/">
+                <img src="assets/images/logo.jpg" alt="KGSO '24" class="w-12 h-12 rounded-full" />
+            </a>
+            <!-- sm -->
+            <div class="md:hidden h-8 flex flex-col justify-center cursor-pointer" onclick="toggleHamburger()">
+                <div class="w-8 h-[0.2rem] bg-yellow-400 relative -translate-y-[225%]"></div>
+                <div class="w-8 h-[0.2rem] bg-yellow-400"></div>
+                <div class="w-8 h-[0.2rem] bg-yellow-400 relative translate-y-[225%]"></div>
+            </div>
+            <!-- md+ -->
+            <div class="hidden md:flex flex-row justify-between text-yellow-400 bg-[#291e0f] border-2 border-yellow-400 rounded-full p-2">
+                <a href="#top" class="pl-2 pr-2">Top</a>
+                <a href="#about" class="pl-2 pr-2">About</a>
+                <a href="#modules" class="pl-2 pr-2">Modules</a>
+                <a href="#register" class="pl-2 pr-2">Register</a>
+                <a href="#contact" class="pl-2 pr-2">Contact</a>
+            </div>
+        </div>
+        <!-- Navigation Menu -->
+        <div id="navmenu" class="fixed top-16 w-screen h-screen flex-col items-center justify-start bg-black z-10" style="display: none;">
+            <a href="#top" class="text-white p-2" onclick="toggleHamburger()">Top</a>
+            <a href="#about" class="text-white p-2" onclick="toggleHamburger()">About</a>
+            <a href="#modules" class="text-white p-2" onclick="toggleHamburger()">Modules</a>
+            <a href="#register" class="text-white p-2" onclick="toggleHamburger()">Register</a>
+            <a href="#contact" class="text-white p-2" onclick="toggleHamburger()">Contact</a>
+        </div>
+        <!-- Jump to top -->
+        <div id="top" class="absolute top-0"></div>
+        <!-- Banner logo -->
+        <div class="absolute flex flex-col items-center justify-center w-screen h-screen">
+            <img src="assets/images/banner.png" alt="Banner">
+        </div>
+        <!-- Everything below -->
+        <div class="absolute top-[90vh] flex flex-col">
+            <!-- Gradient -->
+            <div class="w-screen h-16 bg-gradient-to-t from-black"></div>
+            <div id="about" class="w-full pt-32 bg-black flex flex-col justify-center">
+                <!-- About -->
+                <p class="text-white text-sm w-screen text-justify p-6 pb-16" id="about">
+                    The prestigious national Karachi Grammar STEM Olympiad (KGSO), organised by KGS College Section, is back and bigger than ever.
+                    <br>
+                    On January 25th, 26th, and 27th 2024, be prepared for intense competition in our ten modules against hundreds of the fiercest participants from all over Pakistan, in one of its largest STEM competitions. From solving incredibly challenging maths and logic problems, to investigating an intricate murder mystery and facing off in famous virtual games, KGSO 2024 provides a challenge suitable for everyone.
+                </p>
+
+                <!-- Modules -->
+                <p class="text-white text-center text-6xl pl-3" id="modules">Modules</p>
+                <div class="flex flex-col justify-evenly w-full pt-2">
+                    <!-- Daedalus' Downfall -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Daedalus’ Downfall</p>
+                        <img src="assets/images/crime.jpg" alt="Daedalus' Downfall" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            Daedalus’ Downfall invites participants to put themselves in the shoes of a crime investigator. Participating teams will
+                            compete against each other to follow a breadcrumb trail and trace it back to the murderer. Furthermore, ciphers, morsels
+                            of evidence, and red herrings will be thrown in along the way, beckoning the teams to delve deeper into the mystery - all
+                            whilst racing against time. The race will end with a courtroom-style finale, where each team will have to debate in favour
+                            of prosecution of the suspect they think is guilty.
+                            <br>
+                            Only one team can perfectly fit all the pieces of the puzzle together, and ultimately solve the murder.
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/crime.jpg" alt="Daedalus' Downfall" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Daedalus’ Downfall</p>
+                            <p class="text-white">
+                                Daedalus’ Downfall invites participants to put themselves in the shoes of a crime investigator. Participating teams will
+                                compete against each other to follow a breadcrumb trail and trace it back to the murderer. Furthermore, ciphers, morsels
+                                of evidence, and red herrings will be thrown in along the way, beckoning the teams to delve deeper into the mystery - all
+                                whilst racing against time. The race will end with a courtroom-style finale, where each team will have to debate in favour
+                                of prosecution of the suspect they think is guilty.
+                                <br>
+                                Only one team can perfectly fit all the pieces of the puzzle together, and ultimately solve the murder.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Particle Paradox -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Particle Paradox</p>
+                        <img src="assets/images/physics.jpg" alt="Particle Paradox" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            Particle Paradox awaits! Immerse yourself in the fusion of fun and physics – a realm where nuclear wonders come to life
+                            alongside a galaxy of other captivating concepts. From scientific thinking to quantum leaps, every discovery is a step
+                            closer to unraveling the secrets of the universe. Ready for a journey that sparks curiosity and ignites the thrill of
+                            learning about various facets of physics? Let's explore the extraordinary side together!
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/physics.jpg" alt="Particle Paradox" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Particle Paradox</p>
+                            <p class="text-white">
+                                Particle Paradox awaits! Immerse yourself in the fusion of fun and physics – a realm where nuclear wonders come to life
+                                alongside a galaxy of other captivating concepts. From scientific thinking to quantum leaps, every discovery is a step
+                                closer to unraveling the secrets of the universe. Ready for a journey that sparks curiosity and ignites the thrill of
+                                learning about various facets of physics? Let's explore the extraordinary side together!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Synaptic Fusion -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Synaptic Fusion</p>
+                        <img src="assets/images/biochem.jpg" alt="Synaptic Fusion" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            Explore the fascinating realm where biology and chemistry converge! Delve into the molecular intricacies that govern life,
+                            unraveling the secrets of DNA, proteins, and cellular processes. Through engaging rounds and hands-on experiments,
+                            participants will unlock the mysteries of biomolecules, gaining a deeper understanding of how chemical principles shape the
+                            foundations of life. Join us on this scientific journey, where you'll not only expand your knowledge but also discover the
+                            profound connections between the microscopic world and the marvels of living organisms. Embrace the synergy of biology and
+                            chemistry in an enriching learning experience – your gateway to the captivating world of biochemistry awaits!
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/biochem.jpg" alt="Synaptic Fusion" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Synaptic Fusion</p>
+                            <p class="text-white">
+                                Explore the fascinating realm where biology and chemistry converge! Delve into the molecular intricacies that govern life,
+                                unraveling the secrets of DNA, proteins, and cellular processes. Through engaging rounds and hands-on experiments,
+                                participants will unlock the mysteries of biomolecules, gaining a deeper understanding of how chemical principles shape the
+                                foundations of life. Join us on this scientific journey, where you'll not only expand your knowledge but also discover the
+                                profound connections between the microscopic world and the marvels of living organisms. Embrace the synergy of biology and
+                                chemistry in an enriching learning experience – your gateway to the captivating world of biochemistry awaits!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- The π Lie -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">The π Lie</p>
+                        <img src="assets/images/math.jpg" alt="The π Lie" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            Join us this year for a competition that truly puts your math skills to the test whether it be
+                            through a problem-solving module or one that tests your teamwork. This year’s math module has it
+                            all and we can’t wait for you to take part. From unraveling number mysteries to conquering geometric
+                            enigmas, it's a journey where numbers dance and equations tell tales. Are you ready to transform the
+                            ordinary into the extraordinary?
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/math.jpg" alt="The π Lie" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">The π Lie</p>
+                            <p class="text-white">
+                                Join us this year for a competition that truly puts your math skills to the test whether it be
+                                through a problem-solving module or one that tests your teamwork. This year’s math module has it
+                                all and we can’t wait for you to take part. From unraveling number mysteries to conquering geometric
+                                enigmas, it's a journey where numbers dance and equations tell tales. Are you ready to transform the
+                                ordinary into the extraordinary?
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Celestia Mechanica -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Celestia Mechanica</p>
+                        <img src="assets/images/astronomy.jpg" alt="Celestia Mechanica" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            The night sky goads us with the promise of glory, and long have we outstretched our hands in honorable attempts. It's now your turn to conquer daunting conundrums, explore the sable unknown and unleash your knowledge of the stars. In the perpetual quest to make a mark on this cosmos, will you be the ones to finally succeed...or will the unbridled forces of the Universe tear you apart? Prove yourself to the Celestia Mechanica.
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/astronomy.jpg" alt="Celestia Mechanica" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Celestia Mechanica</p>
+                            <p class="text-white">
+                                The night sky goads us with the promise of glory, and long have we outstretched our hands in honorable attempts. It's now your turn to conquer daunting conundrums, explore the sable unknown and unleash your knowledge of the stars. In the perpetual quest to make a mark on this cosmos, will you be the ones to finally succeed...or will the unbridled forces of the Universe tear you apart? Prove yourself to the Celestia Mechanica.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Ridder's Realm -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Ridder's Realm</p>
+                        <img src="assets/images/logic.jpg" alt="Ridder's Realm" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            Enter the Riddler’s Realm, where cunning prevails and traps lay disguised at every turn. Test yourself against the Riddler’s mind-bending trials designed to test your intellect and strategic acumen. In this module, you’ll need to prove your sharpness to face the Riddler. We only have one piece of advice: sharpen your logic and cryptography skills.
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/logic.jpg" alt="Ridder's Realm" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Ridder's Realm</p>
+                            <p class="text-white">
+                                Enter the Riddler’s Realm, where cunning prevails and traps lay disguised at every turn. Test yourself against the Riddler’s mind-bending trials designed to test your intellect and strategic acumen. In this module, you’ll need to prove your sharpness to face the Riddler. We only have one piece of advice: sharpen your logic and cryptography skills.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Lovelace Interface -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Lovelace Interface</p>
+                        <img src="assets/images/cs.jpg" alt="Lovelace Interface" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            Lovelace Interface will put your programming abilities and computer science know-how to the test. Get ready to go head to head against other teams as you apply problem-solving skills to your programs, fix others' spaghetti code and race against time in a test of your knowledge. Anyone can code, but only one team can make it through the trials and tribulations we have in store for you here. We expect a performance worthy of Lovelace herself.
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/cs.jpg" alt="Lovelace Interface" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Lovelace Interface</p>
+                            <p class="text-white">
+                                Lovelace Interface will put your programming abilities and computer science know-how to the test. Get ready to go head to head against other teams as you apply problem-solving skills to your programs, fix others' spaghetti code and race against time in a test of your knowledge. Anyone can code, but only one team can make it through the trials and tribulations we have in store for you here. We expect a performance worthy of Lovelace herself.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Freudian Slipknot -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Freudian Slipknot</p>
+                        <img src="assets/images/psychology.jpg" alt="Freudian Slipknot" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            You walk past somebody. They give you a strange look. You immediately begin to ponder what they're thinking about.
+                            <br>
+                            Could they be thinking about how steampunk is probably the most perfect theme for KGSO this year? Or are they wondering about how they can unlock the secrets of the mind with the most unconventionally innovative psychology module they've ever encountered?
+                            <br>
+                            In the midst of exploring the intersection of persuasion tactics with street smart strategies, diving deep into academic knowledge with a creative lens, and redefining your understanding of famous psychological concepts, we invite you to a dynamic journey that blends psychological mastery and fun together.
+                            <br>
+                            Are you ready to think out of the box? Then Freudian Slipknot is the module for you.
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/psychology.jpg" alt="Freudian Slipknot" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Freudian Slipknot</p>
+                            <p class="text-white">
+                                You walk past somebody. They give you a strange look. You immediately begin to ponder what they're thinking about.
+                                <br>
+                                Could they be thinking about how steampunk is probably the most perfect theme for KGSO this year? Or are they wondering about how they can unlock the secrets of the mind with the most unconventionally innovative psychology module they've ever encountered?
+                                <br>
+                                In the midst of exploring the intersection of persuasion tactics with street smart strategies, diving deep into academic knowledge with a creative lens, and redefining your understanding of famous psychological concepts, we invite you to a dynamic journey that blends psychological mastery and fun together.
+                                <br>
+                                Are you ready to think out of the box? Then Freudian Slipknot is the module for you.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Kamaji's Realm -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Kamaji's Realm</p>
+                        <img src="assets/images/fandom.jpg" alt="Kamaji's Realm" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            Welcome to "Kemaji’s Realm," a dynamic module that seamlessly blends knowledge and creativity! Dive into rounds exploring fictional characters, books, and boundless storylines.
+                            <br>
+                            But that's not all—brace yourself for exhilarating skits and fun challenges, where participants bring beloved characters to life and tackle whimsical scenarios.
+                            <br>
+                            Unleash your inner thespian as you navigate this interactive fusion of intellect and playfulness, making every moment a celebration of the fantastic worlds we adore. Get ready to be both a mastermind and a performer in this uniquely engaging experience!
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/fandom.jpg" alt="Kamaji's Realm" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Kamaji's Realm</p>
+                            <p class="text-white">
+                                Welcome to "Kemaji’s Realm," a dynamic module that seamlessly blends knowledge and creativity! Dive into rounds exploring fictional characters, books, and boundless storylines.
+                                <br>
+                                But that's not all—brace yourself for exhilarating skits and fun challenges, where participants bring beloved characters to life and tackle whimsical scenarios.
+                                <br>
+                                Unleash your inner thespian as you navigate this interactive fusion of intellect and playfulness, making every moment a celebration of the fantastic worlds we adore. Get ready to be both a mastermind and a performer in this uniquely engaging experience!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Brass Battlegrounds -->
+                    <!-- sm -->
+                    <div class="flex flex-col items-center justify-evenly md:hidden">
+                        <p class="text-white text-xl font-bold">Brass Battlegrounds</p>
+                        <img src="assets/images/gaming.jpg" alt="Brass Battlegrounds" class="max-w-64 max-h-64"/>
+                        <p class="text-white p-6 text-justify text-sm">
+                            Welcome to Brass Battlegrounds – the long-awaited ultimate gaming showdown! Brace yourself for three action-packed rounds, each presenting a unique gaming challenge. Only the savviest gamers will survive the first two rounds. The grand finale awaits, a fierce battle where the ultimate victor emerges after an intense one-hour face-off. Do you have what it takes to conquer Brass Battlegrounds and claim gaming glory?
+                        </p>
+                    </div>
+                    <!-- md+ -->
+                    <div class="hidden md:flex flex-row justify-between items-center pb-4">
+                        <img src="assets/images/gaming.jpg" alt="Brass Battlegrounds" class="max-w-64 max-h-64 pl-12"/>
+                        <div class="flex flex-col justify-center pl-12 pr-12">
+                            <p class="text-white text-xl font-bold">Brass Battlegrounds</p>
+                            <p class="text-white">
+                                Welcome to Brass Battlegrounds – the long-awaited ultimate gaming showdown! Brace yourself for three action-packed rounds, each presenting a unique gaming challenge. Only the savviest gamers will survive the first two rounds. The grand finale awaits, a fierce battle where the ultimate victor emerges after an intense one-hour face-off. Do you have what it takes to conquer Brass Battlegrounds and claim gaming glory?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:flex flex-col w-full md:items-center md:justify-normal">
+                    <!-- Registration -->
+                    <p class="text-white text-center text-6xl pl-3" id="register">Register</p>
+                    <p class="text-white text-sm md:text-base text-justify md:text-center pl-6 pr-6">The registration forms are as follows:</p>
+                    <ul class="text-blue-300 text-sm md:text-base text-justify md:text-center pl-12 pr-16">
+                        <li><a href="https://forms.gle/tzJ7mbSXiF4CaDiv8">Internal Registrations Form</a></li>
+                        <li><a href="https://forms.gle/GSHhtufGxm3XumkX9">External Registrations Form</a></li>
+                        <li><a href="https://forms.gle/3DpQvA9NGko41QRf8">Proof of Payment and Waiver of Liability Form</a></li>
+                    </ul>
+                    <p class="text-white text-sm md:text-base text-justify pl-6 pr-6">
+                        Furthermore, provided <a href="https://drive.google.com/file/d/1IyLxbhPKrLw_yMQ_Fj5sAY2KvI4e4GF1/view?usp=sharing" class="text-blue-300">here</a> is a link to our official invite, which contains further information about registration.
+                    </p>
+                    <p class="text-white text-sm md:text-base text-justify md:text-center pl-6 pr-6 pb-6">
+                        Currently, early bird registrations are open till the 3rd of January 2024. For internal delegations, this is your only opportunity to register before it's too late!
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <p class="text-white text-center text-6xl pl-3" id="contact">Contact</p>
+                <p class="text-white text-sm md:text-base text-justify md:text-center pl-6 pr-6">For any help or queries regarding registration, please contact the following individuals:</p>
+                <ul class="text-white text-sm md:text-base md:text-center pl-12 pr-16">
+                    <li>Internals: Ayesha Faisal Malik (03261345517)</li>
+                    <li>Externals: Ayesha Soomro (03001584442)</li>
+                </ul>
+                <div class="h-16"></div>
+            </div>
+        </div>
+    </body>
+</html>
