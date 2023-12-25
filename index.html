@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="output.css" rel="stylesheet">
         <script src="scripts/navbar.js"></script>
+        <script src="scripts/bannerfade.js"></script>
     </head>
     <body style="font-family: oceanWideSemibold; background-color: black;">
         <div class="fixed w-screen h-screen bg-[url('assets/images/bg.jpg')] bg-responsive-size bg-no-repeat"></div>
@@ -40,7 +41,7 @@
         <div id="top" class="absolute top-0"></div>
         <!-- Banner logo -->
         <div class="absolute flex flex-col items-center justify-center w-screen h-screen">
-            <img src="assets/images/banner.png" alt="Banner">
+            <img id="banner" src="assets/images/banner.png" alt="Banner">
         </div>
         <!-- Everything below -->
         <div class="absolute top-[90vh] flex flex-col">
@@ -55,7 +56,7 @@
                 </p>
 
                 <!-- Modules -->
-                <p class="text-white text-center text-6xl pl-3" id="modules">Modules</p>
+                <p class="text-white text-center text-6xl" id="modules">Modules</p>
                 <div class="flex flex-col justify-evenly w-full pt-2">
                     <!-- Daedalus' Downfall -->
                     <!-- sm -->
@@ -307,7 +308,7 @@
 
                 <div class="md:flex flex-col w-full md:items-center md:justify-normal">
                     <!-- Registration -->
-                    <p class="text-white text-center text-6xl pl-6" id="register">Register</p>
+                    <p class="text-white text-center text-6xl" id="register">Register</p>
                     <div class="flex flex-col md:flex-row justify-between items-center p-2">
                         <div class="p-1.5"><div class="p-3 border-2 border-yellow-400 hover:border-yellow-600 rounded-full text-yellow-400 hover:text-yellow-600 text-center"><a href="https://drive.google.com/file/d/1IyLxbhPKrLw_yMQ_Fj5sAY2KvI4e4GF1/view?usp=sharing">
                             <p>Official invite</p>
@@ -329,7 +330,7 @@
                 </div>
 
                 <!-- Contact -->
-                <p class="text-white text-center text-6xl pl-3" id="contact">Contact</p>
+                <p class="text-white text-center text-6xl" id="contact">Contact</p>
                 <p class="text-white text-sm md:text-base text-justify md:text-center pl-6 pr-6">
                     For any help or queries regarding registration, please contact the following individuals:
                 </p>

@@ -933,6 +933,10 @@ video {
     justify-content: normal;
   }
 
+  .md\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
   .md\:text-center {
     text-align: center;
   }
