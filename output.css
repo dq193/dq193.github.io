@@ -698,8 +698,8 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'assets\/images\/bg\.jpg\'\)\] {
-  background-image: url('assets/images/bg.jpg');
+.bg-\[url\(\'assets\/images\/bg\.png\'\)\] {
+  background-image: url('assets/images/bg.png');
 }
 
 .bg-gradient-to-t {
