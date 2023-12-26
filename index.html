@@ -15,7 +15,7 @@
                 <img src="assets/images/logo.jpg" alt="KGSO '24" class="w-12 h-12 rounded-full" />
             </a>
             <!-- sm -->
-            <div id="hamburger" class="md:hidden h-8 flex flex-col justify-center cursor-pointer">
+            <div class="md:hidden h-8 flex flex-col justify-center cursor-pointer navcomponent">
                 <div class="w-8 h-[0.2rem] bg-yellow-400 relative -translate-y-[225%]"></div>
                 <div class="w-8 h-[0.2rem] bg-yellow-400"></div>
                 <div class="w-8 h-[0.2rem] bg-yellow-400 relative translate-y-[225%]"></div>
@@ -32,11 +32,11 @@
         <div id="navgrad" class="fixed top-16 w-screen h-2 bg-gradient-to-b from-transparent z-10"></div>
         <!-- Navigation Menu -->
         <div id="navmenu" class="fixed top-16 w-screen h-screen hidden flex-col items-center justify-start bg-black z-10">
-            <a href="#top" class="text-white p-2" onclick="toggleHamburger()">Top</a>
-            <a href="#about" class="text-white p-2" onclick="toggleHamburger()">About</a>
-            <a href="#modules" class="text-white p-2" onclick="toggleHamburger()">Modules</a>
-            <a href="#register" class="text-white p-2" onclick="toggleHamburger()">Register</a>
-            <a href="#contact" class="text-white p-2" onclick="toggleHamburger()">Contact</a>
+            <a href="#top" class="text-white p-2 navcomponent" onclick="toggleHamburger()">Top</a>
+            <a href="#about" class="text-white p-2 navcomponent" onclick="toggleHamburger()">About</a>
+            <a href="#modules" class="text-white p-2 navcomponent" onclick="toggleHamburger()">Modules</a>
+            <a href="#register" class="text-white p-2 navcomponent" onclick="toggleHamburger()">Register</a>
+            <a href="#contact" class="text-white p-2 navcomponent" onclick="toggleHamburger()">Contact</a>
         </div>
         <!-- Jump to top -->
         <div id="top" class="absolute top-0"></div>
@@ -64,7 +64,9 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Daedalus’ Downfall</p>
                         <p class="text-white text-xs">Crime Module</p>                        
-                        <img src="assets/images/crime.jpg" alt="Daedalus' Downfall" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0dn4YzMe5Q/">
+                            <img src="assets/images/crime.jpg" alt="Daedalus' Downfall" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             Daedalus’ Downfall invites participants to put themselves in the shoes of a crime investigator. Participating teams will
                             compete against each other to follow a breadcrumb trail and trace it back to the murderer. Furthermore, ciphers, morsels
@@ -77,7 +79,9 @@
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/crime.jpg" alt="Daedalus' Downfall" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0dn4YzMe5Q/">
+                            <img src="assets/images/crime.jpg" alt="Daedalus' Downfall" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Daedalus’ Downfall</p>
                             <p class="text-white text-sm">Crime Module</p>
@@ -97,7 +101,9 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Particle Paradox</p>
                         <p class="text-white text-xs">Physics Module</p>
-                        <img src="assets/images/physics.jpg" alt="Particle Paradox" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0gNrDHoOHb/">
+                            <img src="assets/images/physics.jpg" alt="Particle Paradox" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             Particle Paradox awaits! Immerse yourself in the fusion of fun and physics – a realm where nuclear wonders come to life
                             alongside a galaxy of other captivating concepts. From scientific thinking to quantum leaps, every discovery is a step
@@ -107,7 +113,9 @@
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/physics.jpg" alt="Particle Paradox" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0gNrDHoOHb/">
+                            <img src="assets/images/physics.jpg" alt="Particle Paradox" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Particle Paradox</p>
                             <p class="text-white text-sm">Physics Module</p>
@@ -124,7 +132,9 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Synaptic Fusion</p>
                         <p class="text-white text-xs">Biochem Module</p>
-                        <img src="assets/images/biochem.jpg" alt="Synaptic Fusion" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0gta19qYp1/">
+                            <img src="assets/images/biochem.jpg" alt="Synaptic Fusion" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             Explore the fascinating realm where biology and chemistry converge! Delve into the molecular intricacies that govern life,
                             unraveling the secrets of DNA, proteins, and cellular processes. Through engaging rounds and hands-on experiments,
@@ -136,7 +146,9 @@
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/biochem.jpg" alt="Synaptic Fusion" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0gta19qYp1/">
+                            <img src="assets/images/biochem.jpg" alt="Synaptic Fusion" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Synaptic Fusion</p>
                             <p class="text-white text-sm">Biochem Module</p>
@@ -155,7 +167,9 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">The π Lie</p>
                         <p class="text-white text-xs">Mathematics Module</p>
-                        <img src="assets/images/math.jpg" alt="The π Lie" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0hCgqPKgt6/">
+                            <img src="assets/images/math.jpg" alt="The π Lie" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             Join us this year for a competition that truly puts your math skills to the test whether it be
                             through a problem-solving module or one that tests your teamwork. This year’s math module has it
@@ -166,7 +180,9 @@
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/math.jpg" alt="The π Lie" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0hCgqPKgt6/">
+                            <img src="assets/images/math.jpg" alt="The π Lie" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">The π Lie</p>
                             <p class="text-white text-sm">Mathematics Module</p>
@@ -184,14 +200,18 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Celestia Mechanica</p>
                         <p class="text-white text-xs">Astronomy Module</p>
-                        <img src="assets/images/astronomy.jpg" alt="Celestia Mechanica" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0ingfxo74y/">
+                            <img src="assets/images/astronomy.jpg" alt="Celestia Mechanica" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             The night sky goads us with the promise of glory, and long have we outstretched our hands in honorable attempts. It's now your turn to conquer daunting conundrums, explore the sable unknown and unleash your knowledge of the stars. In the perpetual quest to make a mark on this cosmos, will you be the ones to finally succeed...or will the unbridled forces of the Universe tear you apart? Prove yourself to the Celestia Mechanica.
                         </p>
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/astronomy.jpg" alt="Celestia Mechanica" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0ingfxo74y/">
+                            <img src="assets/images/astronomy.jpg" alt="Celestia Mechanica" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Celestia Mechanica</p>
                             <p class="text-white text-sm">Astronomy Module</p>
@@ -205,14 +225,18 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Ridder's Realm</p>
                         <p class="text-white text-xs">Logic Module</p>
-                        <img src="assets/images/logic.jpg" alt="Ridder's Realm" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0jiHFxoMCT/">
+                            <img src="assets/images/logic.jpg" alt="Ridder's Realm" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             Enter the Riddler’s Realm, where cunning prevails and traps lay disguised at every turn. Test yourself against the Riddler’s mind-bending trials designed to test your intellect and strategic acumen. In this module, you’ll need to prove your sharpness to face the Riddler. We only have one piece of advice: sharpen your logic and cryptography skills.
                         </p>
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/logic.jpg" alt="Ridder's Realm" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0jiHFxoMCT/">
+                            <img src="assets/images/logic.jpg" alt="Ridder's Realm" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Ridder's Realm</p>
                             <p class="text-white text-sm">Logic Module</p>
@@ -226,14 +250,18 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Lovelace Interface</p>
                         <p class="text-white text-xs">Computer Science Module</p>
-                        <img src="assets/images/cs.jpg" alt="Lovelace Interface" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0lmNAuszbV/">
+                            <img src="assets/images/cs.jpg" alt="Lovelace Interface" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             Lovelace Interface will put your programming abilities and computer science know-how to the test. Get ready to go head to head against other teams as you apply problem-solving skills to your programs, fix others' spaghetti code and race against time in a test of your knowledge. Anyone can code, but only one team can make it through the trials and tribulations we have in store for you here. We expect a performance worthy of Lovelace herself.
                         </p>
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/cs.jpg" alt="Lovelace Interface" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0lmNAuszbV/">
+                            <img src="assets/images/cs.jpg" alt="Lovelace Interface" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Lovelace Interface</p>
                             <p class="text-white text-sm">Computer Science Module</p>
@@ -247,7 +275,9 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Freudian Slipknot</p>
                         <p class="text-white text-xs">Psychology Module</p>
-                        <img src="assets/images/psychology.jpg" alt="Freudian Slipknot" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0mU5VcikNF/">
+                            <img src="assets/images/psychology.jpg" alt="Freudian Slipknot" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             You walk past somebody. They give you a strange look. You immediately begin to ponder what they're thinking about.
                             <br>
@@ -260,7 +290,9 @@
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/psychology.jpg" alt="Freudian Slipknot" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0mU5VcikNF/">
+                            <img src="assets/images/psychology.jpg" alt="Freudian Slipknot" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Freudian Slipknot</p>
                             <p class="text-white text-sm">Psychology Module</p>
@@ -280,7 +312,9 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Kamaji's Realm</p>
                         <p class="text-white text-xs">Fandom Module</p>
-                        <img src="assets/images/fandom.jpg" alt="Kamaji's Realm" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0n-XIxAXFR/">
+                            <img src="assets/images/fandom.jpg" alt="Kamaji's Realm" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             Welcome to "Kamaji’s Realm," a dynamic module that seamlessly blends knowledge and creativity! Dive into rounds exploring fictional characters, books, and boundless storylines.
                             <br>
@@ -291,7 +325,9 @@
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/fandom.jpg" alt="Kamaji's Realm" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0n-XIxAXFR/">
+                            <img src="assets/images/fandom.jpg" alt="Kamaji's Realm" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Kamaji's Realm</p>
                             <p class="text-white text-sm">Fandom Module</p>
@@ -309,14 +345,18 @@
                     <div class="flex flex-col items-center justify-evenly md:hidden">
                         <p class="text-white text-xl font-bold">Brass Battlegrounds</p>
                         <p class="text-white text-xs">Gaming Module</p>
-                        <img src="assets/images/gaming.jpg" alt="Brass Battlegrounds" class="max-w-64 max-h-64"/>
+                        <a href="https://www.instagram.com/p/C0ojdfZi7A7/">
+                            <img src="assets/images/gaming.jpg" alt="Brass Battlegrounds" class="max-w-64 max-h-64"/>
+                        </a>
                         <p class="text-white p-6 text-justify text-sm">
                             Welcome to Brass Battlegrounds – the long-awaited ultimate gaming showdown! Brace yourself for three action-packed rounds, each presenting a unique gaming challenge. Only the savviest gamers will survive the first two rounds. The grand finale awaits, a fierce battle where the ultimate victor emerges after an intense one-hour face-off. Do you have what it takes to conquer Brass Battlegrounds and claim gaming glory?
                         </p>
                     </div>
                     <!-- md+ -->
                     <div class="hidden md:flex flex-row justify-between items-center pb-4">
-                        <img src="assets/images/gaming.jpg" alt="Brass Battlegrounds" class="max-w-64 max-h-64 pl-12"/>
+                        <a href="https://www.instagram.com/p/C0ojdfZi7A7/">
+                            <img src="assets/images/gaming.jpg" alt="Brass Battlegrounds" class="max-w-64 max-h-64 pl-12"/>
+                        </a>
                         <div class="flex flex-col justify-center pl-12 pr-12">
                             <p class="text-white text-xl font-bold">Brass Battlegrounds</p>
                             <p class="text-white text-sm">Gaming Module</p>

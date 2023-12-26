@@ -15,17 +15,19 @@ function toggleNavbarOpacity(forceOpaque) {
 }
 
 window.addEventListener("DOMContentLoaded", (ev) => {
-    document.getElementById("hamburger").addEventListener("click", (evv) => {
-        const navbar = document.getElementById("navbar");
-        const navmenu = document.getElementById("navmenu");
-        if (navmenu.classList.contains("hidden")) {
-            navmenu.classList.replace("hidden", "flex");
-            toggleNavbarOpacity(true);
-        } else {
-            navmenu.classList.replace("flex", "hidden");
-            toggleNavbarOpacity(false);
-        }
-    });
+    for (let navcomponent of document.getElementsByClassName("navcomponent")) {
+        navcomponent.addEventListener("click", (evv) => {
+            const navbar = document.getElementById("navbar");
+            const navmenu = document.getElementById("navmenu");
+            if (navmenu.classList.contains("hidden")) {
+                navmenu.classList.replace("hidden", "flex");
+                toggleNavbarOpacity(true);
+            } else {
+                navmenu.classList.replace("flex", "hidden");
+                toggleNavbarOpacity(false);
+            }
+        });
+    }
 });
 
 document.addEventListener("scroll", (ev) => {
